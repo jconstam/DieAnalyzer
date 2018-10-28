@@ -68,17 +68,25 @@ function updateResults( newValue )
 	{
 		setDiv( "status", "Not enough samples" )
 	}
-	else if( chiSquared < 27 )
+	else if( chiSquared < 27.204 )
 	{
-		setDiv( "status", "Not biased" )
+		setDiv( "status", "No bias" )
 	}
-	else if( chiSquared < 30 )
+	else if( chiSquared < 30.144 )
 	{
-		setDiv( "status", "Possibly biased" )
+		setDiv( "status", "Small bias" )
+	}
+	else if( chiSquared < 36.191 )
+	{
+		setDiv( "status", "Moderate bias" )
+	}
+	else if( chiSquared < 43.820)
+	{
+		setDiv( "status", "Strong bias" )
 	}
 	else
 	{
-		setDiv( "status", "Likely biased" )
+		setDiv( "status", "Extreme bias" )
 	}
 }
 
@@ -93,9 +101,9 @@ function addNewRoll( )
 	updateResults( input )
 }
 
-function addRandomRoll( )
+function addRandomRoll( count )
 {
-	for( i = 0; i < 400; i++ )
+	for( i = 0; i < count; i++ )
 	{
 		updateResults( Math.floor( ( Math.random( ) * 20 ) + 1 ) )
 	}

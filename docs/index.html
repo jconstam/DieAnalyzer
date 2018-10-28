@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Die Analyzer</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="dieAnalyzer.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id=header>
+		<p>
+			This analyzes the rolls of a 20-sided die in order to determine if it is fairly weighted.
+		</p>
+	</div>
+	<div id=controls>
+		<input type="text" id="latestRoll" size="3"><button onclick="addNewRoll()">Add new roll</button><br>
+		<button onclick="addRandomRoll()">Add random roll</button>
+	</div>
+	<div class="rTable">
+		<div class="rTableRow">
+			<div class="rTableHead">Total rolls</div>
+		</div>
+		<div class="rTableRow">
+			<div class="rTableCell" id=totalRolls>0</div>
+		</div>
+	</div>
+	<br>
+	<div class="rTable">
+		<div class="rTableRow">
+			<div class="rTableHead">1</div>
+			<div class="rTableHead">2</div>
+			<div class="rTableHead">3</div>
+			<div class="rTableHead">4</div>
+			<div class="rTableHead">5</div>
+			<div class="rTableHead">6</div>
+			<div class="rTableHead">7</div>
+			<div class="rTableHead">8</div>
+			<div class="rTableHead">9</div>
+			<div class="rTableHead">10</div>
+			<div class="rTableHead">11</div>
+			<div class="rTableHead">12</div>
+			<div class="rTableHead">13</div>
+			<div class="rTableHead">14</div>
+			<div class="rTableHead">15</div>
+			<div class="rTableHead">16</div>
+			<div class="rTableHead">17</div>
+			<div class="rTableHead">18</div>
+			<div class="rTableHead">19</div>
+			<div class="rTableHead">20</div>
+		</div>
+		<div class="rTableRow">
+			<div class="rTableCell" id=results01>0</div>
+			<div class="rTableCell" id=results02>0</div>
+			<div class="rTableCell" id=results03>0</div>
+			<div class="rTableCell" id=results04>0</div>
+			<div class="rTableCell" id=results05>0</div>
+			<div class="rTableCell" id=results06>0</div>
+			<div class="rTableCell" id=results07>0</div>
+			<div class="rTableCell" id=results08>0</div>
+			<div class="rTableCell" id=results09>0</div>
+			<div class="rTableCell" id=results10>0</div>
+			<div class="rTableCell" id=results11>0</div>
+			<div class="rTableCell" id=results12>0</div>
+			<div class="rTableCell" id=results13>0</div>
+			<div class="rTableCell" id=results14>0</div>
+			<div class="rTableCell" id=results15>0</div>
+			<div class="rTableCell" id=results16>0</div>
+			<div class="rTableCell" id=results17>0</div>
+			<div class="rTableCell" id=results18>0</div>
+			<div class="rTableCell" id=results19>0</div>
+			<div class="rTableCell" id=results20>0</div>
+		</div>
+		<div class="rTableRow">
+			<div class="rTableCell" id=resultPct01>0%</div>
+			<div class="rTableCell" id=resultPct02>0%</div>
+			<div class="rTableCell" id=resultPct03>0%</div>
+			<div class="rTableCell" id=resultPct04>0%</div>
+			<div class="rTableCell" id=resultPct05>0%</div>
+			<div class="rTableCell" id=resultPct06>0%</div>
+			<div class="rTableCell" id=resultPct07>0%</div>
+			<div class="rTableCell" id=resultPct08>0%</div>
+			<div class="rTableCell" id=resultPct09>0%</div>
+			<div class="rTableCell" id=resultPct10>0%</div>
+			<div class="rTableCell" id=resultPct11>0%</div>
+			<div class="rTableCell" id=resultPct12>0%</div>
+			<div class="rTableCell" id=resultPct13>0%</div>
+			<div class="rTableCell" id=resultPct14>0%</div>
+			<div class="rTableCell" id=resultPct15>0%</div>
+			<div class="rTableCell" id=resultPct16>0%</div>
+			<div class="rTableCell" id=resultPct17>0%</div>
+			<div class="rTableCell" id=resultPct18>0%</div>
+			<div class="rTableCell" id=resultPct19>0%</div>
+			<div class="rTableCell" id=resultPct20>0%</div>
+		</div>
+	</div>
+</body>
+</html>
